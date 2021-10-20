@@ -1,0 +1,19 @@
+.container {
+    width: 289px;
+    height: 324px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textContainer {
+    padding: 18px;
+}
+
+.editorialSection {
+    font-size: 18px;
+    color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
