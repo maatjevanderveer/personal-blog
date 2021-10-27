@@ -1,19 +1,30 @@
 .container {
-    width: 289px;
-    height: 324px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  width: 289px;
+  height: 324px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 18px;
 }
 
 .textContainer {
-    padding: 18px;
+  padding: 18px;
 }
 
 .editorialSection {
-    font-size: 18px;
-    color: #000000;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  font-family: averta;
+  font-weight: 600;
+  color: #676767;
+}
+
+.title {
+  font-family: averta;
+  font-family: "Andada Pro", serif, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  color: #000000;
+  font-weight: 400;
 }

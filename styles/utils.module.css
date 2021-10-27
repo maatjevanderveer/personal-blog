@@ -50,3 +50,10 @@
   .lightText {
     color: #666;
   }
+
+  .editorialText {
+    font-family: "Andada Pro", serif, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+    font-size: 18px;
+  }

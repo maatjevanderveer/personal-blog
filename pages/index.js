@@ -11,8 +11,8 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
-          Hello, I'm Maatje. I'm a front-end developer for Cineville. You can
+        <p className={utilStyles.editorialText}>
+          Welcome at my personal blog. I'm a front-end developer for Cineville. You can
           contact me via <a href="mailto:mjvanderveer@gmail.com">e-mail</a>
         </p>
         <h1>Blog</h1>

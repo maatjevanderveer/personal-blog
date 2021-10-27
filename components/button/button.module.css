@@ -8,6 +8,8 @@
   font-style: normal;
   font-weight: 700;
   cursor: pointer;
+  margin-bottom: 18px;
+  margin-right: 18px;
 }
 
 .base:disabled {

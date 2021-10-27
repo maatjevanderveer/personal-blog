@@ -12,9 +12,9 @@ const Button = (props) => {
 
   return (
     <button
-      variant="primary"
+      variant={props.variant || "primary"}
       className={buttonClass}
-      size={props.size}
+      size={props.size || "md"}
       onClick={props.onClick}
     >
       {props.label}
