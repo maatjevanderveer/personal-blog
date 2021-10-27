@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from "./article-card.module.css";
-import Link from 'next/link';
+import Link from "next/link";
 
-export default function ArticleCard({ imageSource, title, editorialSection }) {
+const ArticleCard = ({ imageSource, title, editorialSection }) => {
   return (
     <Link href="/posts/first-post" passHref>
       <a className={styles.container}>
@@ -14,4 +14,6 @@ export default function ArticleCard({ imageSource, title, editorialSection }) {
       </a>
     </Link>
   );
-}
+};
+
+export default ArticleCard;
