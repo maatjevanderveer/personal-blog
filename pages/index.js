@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Link from "next/link";
 import ArticleCard from "../components/article-card";
 import Layout, { siteTitle } from "../components/layout/layout";
 import utilStyles from "../styles/utils.module.css";
+import Button from "../components/button";
 
 export default function Home() {
   return (
@@ -22,6 +22,22 @@ export default function Home() {
           title="This is a delicious pancake recipe"
         />
       </section>
+      <Button
+        variant="primary"
+        label="Lees meer"
+        size="md"
+        onClick={() => {
+          alert("hello");
+        }}
+      />
+      <Button
+        variant="secondary"
+        label="Lees meer"
+        size="md"
+        onClick={() => {
+          alert("hello");
+        }}
+      />
     </Layout>
   );
 }
