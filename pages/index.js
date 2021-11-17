@@ -4,8 +4,20 @@ import Layout, { siteTitle } from "../components/layout/layout";
 import utilStyles from "../styles/utils.module.css";
 import Button from "../components/button";
 import ButtonGroup from "../components/button-group";
+import { getSortedPostsData } from "../lib/posts";
 
-export default function Home() {
+// getStaticProps can only be exported from a page
+// because React needs to have all the data before te page gets rendered
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
@@ -24,6 +36,22 @@ export default function Home() {
           title="This is a delicious pancake recipe"
         />
       </section>
+
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <ButtonGroup>
         <Button
           variant="primary"
